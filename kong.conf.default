@@ -1020,16 +1020,16 @@
                                      # each upstream request to open a new
                                      # connection.
 
-#upstream_keepalive_max_requests = 10000 # Sets the default maximum number of
-                                         # requests than can be proxied upstream
-                                         # through one keepalive connection.
-                                         # After the maximum number of requests
-                                         # is reached, the connection will be
-                                         # closed.
-                                         # A value of `0` will disable this
-                                         # behavior, and a keepalive connection
-                                         # can be used to proxy an indefinite
-                                         # number of requests.
+#upstream_keepalive_max_requests = 1000 # Sets the default maximum number of
+                                        # requests than can be proxied upstream
+                                        # through one keepalive connection.
+                                        # After the maximum number of requests
+                                        # is reached, the connection will be
+                                        # closed.
+                                        # A value of `0` will disable this
+                                        # behavior, and a keepalive connection
+                                        # can be used to proxy an indefinite
+                                        # number of requests.
 
 #upstream_keepalive_idle_timeout = 60   # Sets the default timeout (in seconds)
                                         # for which an upstream keepalive
