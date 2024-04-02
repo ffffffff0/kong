@@ -1192,13 +1192,13 @@
                                                 # not make use of the PCRE library and their behavior
                                                 # is unaffected by this setting.
 
-#nginx_http_keepalive_requests = 10000 # Sets the maximum number of client requests that can be served through one
-                                       # keep-alive connection. After the maximum number of requests are made,
-                                       # the connection is closed.
-                                       # Closing connections periodically is necessary to free per-connection
-                                       # memory allocations. Therefore, using too high maximum number of requests
-                                       # could result in excessive memory usage and not recommended.
-                                       # See: https://nginx.org/en/docs/http/ngx_http_core_module.html#keepalive_requests
+#nginx_http_keepalive_requests = 1000 # Sets the maximum number of client requests that can be served through one
+                                      # keep-alive connection. After the maximum number of requests are made,
+                                      # the connection is closed.
+                                      # Closing connections periodically is necessary to free per-connection
+                                      # memory allocations. Therefore, using too high maximum number of requests
+                                      # could result in excessive memory usage and not recommended.
+                                      # See: https://nginx.org/en/docs/http/ngx_http_core_module.html#keepalive_requests
 
 
 
